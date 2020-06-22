@@ -7,7 +7,7 @@ public class HUD : MonoBehaviour
 {
     public static HUD HUDManager;
     [SerializeField] private Text Txt_Score = null;
-    [SerializeField] private Image Image_Lives = null;
+    
     [SerializeField] private Text Txt_Message = null;
  
     void Start()
@@ -21,10 +21,7 @@ public class HUD : MonoBehaviour
     }
 
     //updates the number of hearts for lives
-    public void UpdateLives()
-    {
-        Image_Lives.rectTransform.sizeDelta = new Vector2(GameManager.Lives * 50, 30);
-    }
+    
 
     public void GameOver()
     {

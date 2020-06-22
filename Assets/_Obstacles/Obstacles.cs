@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
-    [SerializeField] private int Hitpoints = 3;
+    
     [SerializeField] private bool RandomRotation = false;
 
     private void Start()

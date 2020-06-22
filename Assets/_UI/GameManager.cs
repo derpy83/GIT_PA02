@@ -7,16 +7,18 @@ public class GameManager : MonoBehaviour
 {
     public enum GameState {  GameOver, GameStart, GameIdle};
     public static GameState CurrentState = GameState.GameIdle;
-
-    public static int Lives = 3;
+    
+    
     public static int Score = 0;
+    
 
     void Start()
     {
-        Lives = 3;
+        
         Score = 0;
         Time.timeScale = 0;
         CurrentState = GameState.GameIdle;
+        
     }
     
     void Update()
@@ -33,4 +35,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+    public void retry()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }
